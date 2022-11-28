@@ -1,0 +1,23 @@
+Comando para laravel
+
+//Iniciar proyecto
+php artisan serve
+
+//Crear un modelo (-m es para incluir su migracion)
+//Ruta de los modelos --> app/models 
+//Ruta de las migraciones --> database/migrations 
+php artisan make:model nombre -m
+
+//Crear una migracion de las tablas a sql, mariaDB, mongoDB, etc
+php artisan migrate
+
+//Actualizar migraciones por si ahi una equivocasion o cambios
+(Desase el ultimo cambio echo)
+php artisan migrate:rollback
+
+//Status de las migraciones
+php artisan migrate:status
+
+//Crear un controlador de los modelos
+//Ruta de los controladores --> app/http/controllers
+php artisan make:controller nombre
